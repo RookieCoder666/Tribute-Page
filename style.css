@@ -128,7 +128,7 @@ article {
   letter-spacing: 1px;
 }
 article h3{
-  text-align: center;
+  /* text-align: center; */
   padding-bottom: 0.5em;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -137,7 +137,7 @@ article ul{
   margin-left: 1.5em;
 }
 article ul li{
-  padding-bottom: 0.8em;
+  padding-bottom: 0.9em;
 }
 article ul span{
   font-style: italic;
