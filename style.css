@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:slnt,wght@-12..0,100..900&family=Graduate&family=Pridi:wght@200;300;400;500;600;700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Dirt&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+::selection {
+  background-color: #2b2a2a;
+  color: #ffffff;
+}
+
+:root{
+--font-heading: "Rubik Dirt", system-ui;
+--font-subheading: "Quantico", sans-serif;
+--font-para: "Pridi", serif;
+--font-title: "Bebas Neue", sans-serif;
+--img-caption: "Graduate", serif;
+
+}
+
+body {
+  background: linear-gradient(to bottom right, #3e3d3d, #404042);
+  font-size: 62.5%;
+}
+/* mob */
+header h1{
+  text-align: center;
+  margin-top:0.2em;
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+img{
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+}
+figure figcaption {
+  font-size: 0.6rem;
+  font-family: var(--img-caption);
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1em;
+  letter-spacing: 1px;
+}
+
+/* Main content */
+
+main{
+  margin: 0em 2em;
+}
+
+main .elon-musk{
+  margin-top: 0.9em;
+}
+.elon-musk h2 , .elon-musk h3{
+  text-transform:capitalize ;
+  font-family: var(--font-subheading);
+  font-weight: 600;
+  padding-top: 0.9em;
+  padding-bottom: 0.3em;
+}
+.elon-musk h2{
+  font-size: 1.5rem;
+}
+.elon-musk h3{
+  font-size: 1.3rem;
+}
+.elon-musk p{
+  font-size: 1.1rem;
+  font-family: var(--font-para);
+  letter-spacing: 1px;
+}
+
+
+h2{
+text-align: center;
+font-size: 2.5rem;
+font-family: var(--font-title);
+font-weight: 600;
+margin-top: 0.9em;
+letter-spacing: 3px;
+}
+.tesla .tesla-logo{
+  display: block ;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tesla div p, .boring-company p , .neuralink , .spacex{
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: var(--font-para);
+  letter-spacing: 1.1px;
+}
+
+.tesla .about-tesla p ,.boring-company p , .neuralink p , .spacex p{
+  padding-top: 0.8em;
+}
+
+.tesla figure {
+  position: relative;
+}
+.tesla figcaption{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
+}
+
+
+article h3{
+  text-align: center;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+article ul{
+  margin-left: 1.5em;
+}
+article ul li{
+  padding-bottom: 0.8em;
+}
+
+article{
+  font-size: 1.2rem;
+  font-family: var(--font-para);
+  padding-top: 1.5em;
+  letter-spacing: 1px;
+}
+article ul span{
+  font-style: italic;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
