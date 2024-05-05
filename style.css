@@ -1,260 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:slnt,wght@-12..0,100..900&family=Graduate&family=Pridi:wght@200;300;400;500;600;700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: white;
-}
-::selection {
-  background-color: #2b2a2a;
+/* Quantico font-weight are 400 and 700 , Merriweather font-weight are 300 , 400, 700, 900 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 :root{
---font-heading: "Rubik Dirt", system-ui;
---font-subheading: "Quantico", sans-serif;
---font-para: "Pridi", serif;
---font-title: "Bebas Neue", sans-serif;
---img-caption: "Graduate", serif;
+--Main-font-family: "Merriweather", serif;
+--Body-font-family: "Quantico", sans-serif;
+
+--text-color:#000000;
+--background-color:#CCB866;
 }
 
-body {
-  background: linear-gradient(to bottom right, #544f4f, #777777);
-  font-size: 62.5%;
+h1,h2{
+    font-family: var(--Main-font-family);
+    font-weight: 900;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+h3,p{
+    font-family: var(--Body-font-family);
+    font-weight: 700;
+    text-transform: capitalize;
 }
 
-/* mobile-first approach  */
-
-header h1{
-  text-align: center;
-  margin-top:0.2em;
-  font-size: 3.5rem;
-  font-weight: 500;
-  font-family: var(--font-heading);
-  text-transform: uppercase;
-  text-decoration: underline;
+abbr[title]{
+    text-decoration: none;
 }
-
-/* FOR ALL IMAGE */
-img{
-  max-width: 100%;
-  height: auto;
-  padding-top: 1em;
-}
-figure figcaption {
-  font-size: 0.6rem;
-  font-family: var(--img-caption);
-  font-weight: 400;
-  text-align: center;
-  text-transform: capitalize;
-  margin-top: 1em;
-  letter-spacing: 1px;
-}
-
-/* Main content */
 
 main{
-  margin: 0.5em 2em 0;
+    width: 95%;
+    margin: 50px auto;
+}
+h1{
+    font-size: 4rem;
 }
 
-.elon-musk h2 , .elon-musk h3{
-  text-transform:capitalize ;
-  font-family: var(--font-subheading);
-  font-weight: 600;
-  padding-bottom: 0.4em;
-}
-.elon-musk h2{
-  font-size: 1.5rem;
-  padding-top: 0.5em;
-}
-.elon-musk h3{
-  font-size: 1.3rem;
-  padding-top: 1em;
-}
-.elon-musk p{
-  font-size: 1.1rem;
-  font-family: var(--font-para);
-  letter-spacing: 1px;
-}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ensure both image and text take the same height */
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
-/* For all Headings that are part of the Main tag. */
-main h2{
-  text-align: center;
-  font-size: 2.5rem;
-  font-family: var(--font-title);
-  font-weight: 600;
-  margin-top: 0.9em;
-  letter-spacing: 3px;
-}
+    /* Image styles */
+    img{
+        width: 30%; /* Allow the image to adjust its height */
+        max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+        border-radius: 10px;
+        object-fit: cover;
+    }
 
-/* For all paragraphs that are part of the Main tag. */
-main .same-para{
-  text-align: center;
-  font-size: 1.2rem;
-  font-family: var(--font-para);
-  padding-top: 2em;
-  padding-bottom: 0.5em;
-  letter-spacing: 1.1px;
+    /* Text styles */
+    .text{
+        flex: 1; /* Let the text take the remaining space */
+        font-size: 2rem;
+        padding-left: 20px;
+        /* Adjust padding for paragraphs */
+        p{
+            padding-bottom: 20px;
+        }
+        
+        /* Remove bottom padding from the last paragraph */
+        p:nth-last-child(1){
+            padding-bottom: 0;
+        }
+
+    }
 }
 
 
-.tesla .tesla-logo{
-  display: block ;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-.tesla figure {
-  position: relative;
-}
-.tesla figcaption{
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 0.7rem;
-}
 
-main .neuralink img{
-  padding-top: 4em;
-}
-
-/* For All Article */
-article {
-  font-size: 1.2rem;
-  font-family: var(--font-para);
-  padding-top: 1.5em;
-  letter-spacing: 1px;
-}
-article h3{
-  /* text-align: center; */
-  padding-bottom: 0.5em;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-article ul{
-  margin-left: 1.5em;
-}
-article ul li{
-  padding-bottom: 0.9em;
-}
-article ul span{
-  font-style: italic;
-  font-weight: 600;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-}
-
-/* Footer */
-footer{
-  background: black;
-  color: white;
-}
-
-.footer{
-  text-align: center;
-  font-family: var(--font-subheading);
-  text-transform: capitalize;
-  margin: 0 2em;
-}
-footer .footer-heading{
-  font-size: 2.5rem;
-  margin-top: 0.5em;
-  padding-bottom: 0.2em;
-}
-footer .footer-heading a{
-  text-decoration: none;
-  transition: all 1ms ease-in-out;  
-}
-footer .footer-heading a:hover{
-  color: #dadada;
-}
-
-footer p{
-  font-size: 1rem;
-  padding-bottom: 0.5em;
-}
-
-footer .creater:after{
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  margin-top: 0.8em; 
-  margin-bottom: 0.4em; 
-}
-
-/* Media query for devices with a width greater than 620px.  */
-
-@media (min-width: 620px) {
-header h1{
-  font-size: 6rem;
-}
-
-/* FOR ALL IMAGE */
-img{
-  display: block;
-  max-width: 80%;
-  margin: 0 auto;
-  padding-top: 1.5em;
-}
-figure figcaption {
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 1.5px;
-}
-
-/* Main content */
-
-main{
-  margin: 0 5em;
-}
-
-.elon-musk h2 , .elon-musk h3{
-  font-weight: 600;
-  padding-bottom: 0.4em;
-}
-.elon-musk h2{
-  font-size: 3rem;
-}
-.elon-musk h3{
-  font-size: 1.8rem;
-}
-.elon-musk p{
-  font-size: 1.4rem;
-}
-
-/* For all Heading that are part of the Main tag. */
-h2{
-  font-size: 4rem;
-}
-
-/* For all paragraphs that are part of the Main tag. */
-main .same-para{
-  font-size: 1.5rem;
-}
-
-.tesla .tesla-logo{
-  max-width: 80%;
-}
-.tesla figcaption{
-  font-size: 0.9rem;
-  letter-spacing: 1.5px;
-}
-
-main .neuralink img{
-  padding-bottom: 4em;
-}
-
-/* For All Article */
-article{
-  font-size: 1.5rem;
-}
-article h3{
-  font-size: 1.8rem;
-  padding-bottom: 1em;
-}
-}
