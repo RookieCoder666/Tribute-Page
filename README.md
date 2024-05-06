@@ -1,4 +1,4 @@
-![Screenshot 2024-05-06 155906](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/07ebb1f2-2154-4cc7-9191-b4728524f5d8)<h1 style="text-transform: uppercase;">Tribute to Leonardo da Vinci </h1>
+<h1 style="text-transform: uppercase;">Tribute to Leonardo da Vinci </h1>
 
 <h2 style="text-transform: capitalize;">Welcome to my tribute page dedicated to the legendary Renaissance figure, Leonardo da Vinci!</h2>
 
