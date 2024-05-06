@@ -38,3 +38,5 @@ Features</p>
 ![seventh](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/aa7defa9-356a-4f45-a582-546840003068)
 
 ![eighth](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/7842a53f-2485-4887-9a06-5a3de7e024bc)
+
+![ninth](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/3261f769-bcb9-4364-a691-8522f58efdc2)
