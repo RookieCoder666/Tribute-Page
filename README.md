@@ -22,11 +22,19 @@ Features</p>
 <br>
 
 <p style="text-transform: Uppercase; font-size:30px; font-weight:bold; letter-spacing:2px;">preview</p>
-![Screenshot 2024-05-06 155832](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/d3fbc8a7-23f5-4161-8d0d-98a8ebc9fb04)
-![Screenshot 2024-05-06 155841](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/03a7dc68-f55f-4931-8238-67162a617499)
-![Screenshot 2024-05-06 155848](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/2ac2b784-32fe-4c0c-9962-8d7d8b251a4b)
-![Screenshot 2024-05-06 155900](https:/![Screenshot 2024-05-06 155929](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/32b92352-2124-4063-a041-c66126f3df36)
-/github.com/RookieCoder666/Tribute-Page/assets/162013099/65c09968-a78a-4a02-98d4-54de47acf07f)![Screenshot 2024-05-06 155920](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/4136cbb0-39e5-48da-8427-7dd5545ef379)
 
-![Uploading Screenshot 2024-05-06 155906.png…]![Screenshot 2024-05-06 155912](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/9c816abe-1bad-4897-87e6-d2257ddedfac)
-()
+![first](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/465694fb-e264-4b88-83ad-b828bc5aea0c)
+
+![second](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/5181ca4f-d2a7-4928-994e-17629a1cdc25)
+
+![third](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/be45dc71-8b95-437b-89d5-7b5c6f3900fd)
+
+![fourth](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/2337ad8c-903e-4fba-9fbf-a797ff8ef971)
+
+![fifth](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/58f56958-c5c3-46e1-bd9b-f3a948884ab6)
+
+![sixth](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/c498b310-2290-4d6e-904e-b45561784b2a)
+
+![seventh](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/aa7defa9-356a-4f45-a582-546840003068)
+
+![eighth](https://github.com/RookieCoder666/Tribute-Page/assets/162013099/7842a53f-2485-4887-9a06-5a3de7e024bc)
