@@ -10,6 +10,8 @@
     box-sizing: border-box;
     background-color: var(--background-color);
     color: var(--text-color);
+
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -18,23 +20,61 @@
 
     --text-color: #000000;
     --background-color: #CCB866;
+
+    /* For Heading */
+    --main-heading-size:6rem;
+    --second-heading-size:4rem;
+    --third-heading-size:3.5rem;
+
+    /* For Paragraph */
+    --para-size:2.2rem;
 }
 
-/* Headings */
-h1,
-h2 {
+/* Text styling */
+h1, h2{
     font-family: var(--Main-font-family);
     font-weight: 900;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
 
-/* Body Text */
-h3,
-p {
+h1{
+    font-size: var(--main-heading-size);
+    width: 95%;
+    margin: 5px auto 0 auto;
+}
+h2{
+    font-size: var(--second-heading-size);
+}
+
+h3{
+    font-size: var(--third-heading-size);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3,p {
     font-family: var(--Body-font-family);
     font-weight: 700;
+}
+p{
+    font-size: var(--para-size);
     text-transform: capitalize;
+    padding-bottom: 20px;
+}
+/* Remove bottom padding from the last paragraph */
+p:nth-last-child(1) {
+    padding-bottom: 0;
+}
+
+h4{
+    font-size: var(--third-heading-size);
+    text-transform: capitalize;
+    text-align: center;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* Abbreviation Styling */
@@ -42,140 +82,265 @@ abbr[title] {
     text-decoration: none;
 }
 
-/* Main Content Styles */
-main {
-    width: 95%;
-    margin: 50px auto;
-}
 
-/* Main Heading Styles */
-h1 {
-    font-size: 4rem;
-}
-
-/* Adjust padding for paragraphs */
-p {
-    padding-bottom: 20px;
-}
-
-/* Remove bottom padding from the last paragraph */
-p:nth-last-child(1) {
-    padding-bottom: 0;
-}
-
-/* Nested CSS is Used in this project*/
+/* Nested CSS is also Used in this project*/
 
 /* Header Section Styles */
 header {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    width: 95%;
+    margin: 50px auto;
 
     /* Image Styles within header  */
     img {
         width: 30%;
-        /* Allow the image to adjust its height */
         max-height: 100%;
-        /* Ensure the image doesn't exceed the container's height */
         border-radius: 10px;
         object-fit: cover;
     }
 
     /* Text Styles within header  */
     .text {
-        flex: 1;
-        /* Let the text take the remaining space */
-        font-size: 2rem;
+        flex: 1; /* Let the text take the remaining space */
+        font-size: var(--para-size);
         padding-left: 20px;
     }
 }
 
 
+/* Main Content Styles */
+main{
+    width: 95%;
+    margin: 0 auto 20px auto;
+}
+
+.biography , .artistic-works , .scientific-contributions{
+    margin-bottom: 50px;
+}
 
 
 /* Biography Section Styles */
 .biography {
-    margin-bottom: 150px;
 
     /* h2 styles within biography */
     h2 {
-        font-size: 3rem;
+        font-size: var(--second-heading-size);
         padding-bottom: 25px;
-    }
-
-    /* p styles within biography */
-    p {
-        font-size: 2rem;
     }
 }
 
 /* Subheading Styles */
 .subheading {
     padding: 25px 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 
+/* Artwork Styles and scientific-contributions styles */
 
-/* Artwork Styles */
-
-.artistic-works {
-    margin-bottom: 150px;
-
-    /* h2 styles within artistic-works */
-    h2 {
-        font-size: 3rem;
-    }
+.art,.sci{
+    margin-bottom:60px;
 }
 
-.art{
-    margin-bottom:100px;
-}
-.art:nth-last-child(1){
+.art:nth-last-child(1) ,.sci:nth-last-child(1){
     margin-bottom: 0px;
 }
 
-.artistic-works h3{
-    font-size: 4rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-.artistic-works p{
-    font-size: 2.5rem;
-}
 
-/* artwork1-3 for artwork 1 and 3 because they share same property */
-.artwork1-3 {
+/* They all have the same style : artwork-one , artwork-three ,botanical-observations , hydrodynamics , astronomy-meteorology */
+.common-style {
     display: flex;
     justify-content: center;
     align-items: stretch;
 
-    /* img styles within artwork1-3 */
+    /* img styles within artwork-one , artwork-three ,botanical-observations , hydrodynamics , astronomy-meteorology */
     img {
         width: 500px;
-        max-height: 100%;
+        height: 100%;
         border-radius: 10px;
         object-fit: cover;
     }
-
-    /* p style within artwork1-3 */
+    /* p style within artwork-one , artwork-three ,botanical-observations , hydrodynamics , astronomy-meteorology */
     p {
-        text-align: justify;
+        text-align: center;
         padding-right: 35px;
-        padding-top: 50px;
+        padding-top: 30px;
     }
 }
 
-.artwork2{
+
+/* Artwork Styling */
+.artwork-two{
     img{
         width: 100%;
         height: 600px;
         object-fit: cover;
-        padding-bottom: 30px;
     }
 }
 
+/* scientific-contributions Styling */
+.anatomical-studie  h3{
+    text-align: left;
+    padding-top: 20px;
+}
 
+.anatomical-studie .imgs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.anatomical-studie img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.anatomical-studie .imgs img:nth-last-child(2){
+    height: 600px;
+}
+
+
+/* Styling Figure and Figurecaption */
+figure:nth-last-child(1){
+    padding-top: 30px;
+}
+figure:nth-last-child(2){
+    padding-top:30px ;
+}
+
+figcaption{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: var(--Main-font-family);
+    font-weight: 700;
+    padding-top: 10px;
+}
+.artistic-works .artwork-two figure{
+    padding-bottom: 20px;
+}
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+footer::before{
+    content: "";
+    display: block;
+    background-color: #000000;
+    width: 100%;
+    height: 10px;
+    margin: 30px 0;
+}
+
+
+
+/* Media Queries */
+@media (max-width:1600px){
+    :root {
+        --para-size:2rem;
+    }
+
+    header {
+        /* Image Styles within header  */
+        img {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width:1200px){
+    :root {
+        --main-heading-size:4rem;
+        --second-heading-size:3.5rem;
+        --third-heading-size:3rem;
+    }
+    header {
+        flex-direction: column;
+
+        /* Image Styles within header  */
+        img {
+            width: 100%;
+            height: 500px;
+        }
+    
+        /* Text Styles within header  */
+        .text {
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+    .common-style{
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            padding-right: 0px;
+            padding-top: 10px;
+            }
+    }
+
+    .subheading {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:800px){
+    :root {
+        --main-heading-size:3rem;
+        --second-heading-size:2.5rem;
+        --third-heading-size:2rem;
+
+        --para-size:1.5rem;
+    }
+
+    .biography , .artistic-works , .scientific-contributions{
+        margin-bottom: 35px;
+    }
+
+    .art,.sci{
+        margin-bottom:30px;
+    }
+
+    figcaption{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media(max-width:490px){
+    :root {
+        --main-heading-size:2rem;
+        --second-heading-size:2rem;
+
+        --para-size:1.2rem;
+    }
+
+    header {
+        margin: 20px auto 50px auto;
+
+        /* Text Styles within header  */
+        .text {
+            text-align: left;
+            padding-top: 5px;
+        }
+    }
+
+    .subheading {
+        font-size: 1.2rem;
+    }
+}
